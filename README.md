@@ -91,7 +91,7 @@ Add your screenshots below. Update the image filenames if yours are different.
 ![Desktop Website](Screenshot%202026-11-07%20223028.png)
 
 ### Website – Mobile View
-![Mobile Website](screenshots/mobile-website.png)
+![Mobile Website](Screenshot_20261107-225652_Google)
 
 ## Challenges and Troubleshooting
 
