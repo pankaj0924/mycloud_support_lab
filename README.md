@@ -2,9 +2,9 @@
 
 ## Project Overview
 
-My Cloud Support Lab is a beginner-level AWS cloud project designed to understand and practise the fundamentals of cloud computing, EC2 instance management, networking, and web server deployment.
+My Cloud Support Lab is a hands-on AWS project focused on learning and practising cloud infrastructure, EC2 instance management, basic networking, and web server deployment.
 
-In this project, I launched an Amazon EC2 instance, configured the networking and security settings, installed Apache HTTP Server, and hosted a responsive static website using HTML and CSS.
+In this project, I launched an Amazon EC2 instance, configured the required networking and security settings, installed and configured Apache HTTP Server, and deployed a responsive static website using HTML and CSS. This project helped me gain practical experience with AWS infrastructure and basic cloud troubleshooting.
 
 ## Project Architecture
 
