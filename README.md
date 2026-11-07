@@ -82,7 +82,7 @@ Add your screenshots below. Update the image filenames if yours are different.
 ![EC2 Instance](Screenshot%202026-11-07%20222556.png)
 
 ### Security Group
-![Security Group](Screenshot%202026-11-07%20223016.png)
+![Security Group](Screenshot%202026-11-07%20222703.png)
 
 ### Website – Desktop View
 ![Desktop Website](Screenshot%202026-11-07%20222935.png)
