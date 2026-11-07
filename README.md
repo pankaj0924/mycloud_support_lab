@@ -79,7 +79,7 @@ Add your screenshots below. Update the image filenames if yours are different.
 ![Apache Status](screenshots/apache-status.png)
 
 ### EC2 Instance
-![EC2 Instance](screenshots/ec2-instance.png)
+![EC2 Instance](Screenshot%202026-11-07%20222556.png)
 
 ### Security Group
 ![Security Group](screenshots/security-group.png)
