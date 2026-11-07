@@ -75,22 +75,22 @@ Configured inbound rules:
 
 Add your screenshots below. Update the image filenames if yours are different.
 
-### Apache Server Status
+###	Apache service running
 ![Apache Status](Screenshot%202026-11-07%20222852.png)
 
-### EC2 Instance
+### Instance successfully running
 ![EC2 Instance](Screenshot%202026-11-07%20222556.png)
 
-### Security Group
+### SSH and HTTP rules
 ![Security Group](Screenshot%202026-11-07%20222703.png)
 
-### Website – Desktop View
+### Website successfully hosted
 ![Desktop Website](Screenshot%202026-11-07%20222935.png)
 ![Desktop Website](Screenshot%202026-11-07%20223006.png)
 ![Desktop Website](Screenshot%202026-11-07%20223016.png)
 ![Desktop Website](Screenshot%202026-11-07%20223028.png)
 
-### Website – Mobile View
+### Responsive website
 ![Mobile Website](Screenshot_20261107-225652_Google.png)
 
 ## Challenges and Troubleshooting
