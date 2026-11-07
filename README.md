@@ -1,4 +1,4 @@
-# My Cloud Support Lab – AWS EC2 Project
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/79428bc3-0bac-42b8-b79a-10aaca849d21" /># My Cloud Support Lab – AWS EC2 Project
 
 ## Project Overview
 
@@ -76,16 +76,19 @@ Configured inbound rules:
 Add your screenshots below. Update the image filenames if yours are different.
 
 ### Apache Server Status
-![Apache Status](screenshots/apache-status.png)
+![Apache Status](Screenshot%202026-11-07%20222852.png)
 
 ### EC2 Instance
 ![EC2 Instance](Screenshot%202026-11-07%20222556.png)
 
 ### Security Group
-![Security Group](screenshots/security-group.png)
+![Security Group](Screenshot%202026-11-07%20222703.png)
 
 ### Website – Desktop View
-![Desktop Website](screenshots/desktop-website.png)
+![Desktop Website](Screenshot%202026-11-07%20222935.png)
+![Desktop Website](Screenshot%202026-11-07%20223006.png)
+![Desktop Website](Screenshot%202026-11-07%20223016.png)
+![Desktop Website](Screenshot%202026-11-07%20223028.png)
 
 ### Website – Mobile View
 ![Mobile Website](screenshots/mobile-website.png)
