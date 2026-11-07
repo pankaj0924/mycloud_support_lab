@@ -1,0 +1,132 @@
+# AWS Configuration – My Cloud Support Lab
+
+## 1. Project Overview
+
+**Project:** My Cloud Support Lab – Deploying a Linux Web Server on Amazon EC2
+
+This project demonstrates how to launch and configure an Amazon EC2 instance, install the Apache web server, and host a simple HTML/CSS website that can be accessed over the internet.
+
+## 2. AWS Region and Availability Zone
+
+| Setting | Value |
+|---|---|
+| AWS Region | `eu-north-1` (Europe – Stockholm) |
+| Availability Zone | `eu-north-1b` |
+| Operating System | Amazon Linux 2023 |
+| EC2 Instance Type | `t3.micro` |
+
+## 3. VPC Configuration
+
+| Setting | Value |
+|---|---|
+| VPC CIDR | `172.31.0.0/16` |
+| VPC ID | `vpc-0d59377a2ae6675f9` |
+| Subnet CIDR | `172.31.32.0/20` |
+| Subnet ID | `subnet-09e0d87cb3c8b7aa1` |
+| Subnet Availability Zone | `eu-north-1b` |
+| Auto-assign public IPv4 | Enabled (`Yes`) |
+
+The EC2 instance is deployed in a subnet configured to automatically assign public IPv4 addresses to newly launched instances.
+
+## 4. Internet Gateway and Route Table
+
+An Internet Gateway is attached to the VPC.
+
+- **Internet Gateway ID:** `igw-009067c20efbd0cce`
+- **Default route:** `0.0.0.0/0`
+- **Route target:** `igw-009067c20efbd0cce`
+- **Route state:** `Active`
+
+The subnet's route table includes a default route to the Internet Gateway. This provides a route for internet-bound traffic. The VPC also has its local route for communication within the VPC CIDR (`172.31.0.0/16`).
+
+## 5. Network Access Control List (NACL)
+
+The Network ACL associated with the subnet was reviewed.
+
+- Inbound rule `100`: Allow all traffic
+- Outbound rule `100`: Allow all traffic
+- Default `*` rule: Deny
+
+A NACL is stateless, so inbound and outbound rules are evaluated separately. The security group provides the instance-level access restrictions described below.
+
+## 6. EC2 Security Group
+
+The EC2 security group was configured with these inbound rules:
+
+| Type | Protocol | Port | Source | Purpose |
+|---|---|---:|---|---|
+| SSH | TCP | 22 | My current public IP (`/32`) | Administrative access |
+| HTTP | TCP | 80 | `0.0.0.0/0` | Public website access |
+
+**Security improvement:** SSH access was restricted from a broad source range to the administrator's current public IP address using a `/32` CIDR. The actual IP address is intentionally not published in this repository because it can change and does not need to be exposed.
+
+HTTP remains open to the internet so visitors can access the practice website. The site currently uses HTTP, not HTTPS; therefore, browsers may display a “Not secure” indicator. Do not use this configuration for sensitive production workloads.
+
+## 7. EC2 Instance
+
+| Setting | Value |
+|---|---|
+| Instance type | `t3.micro` |
+| Operating system | Amazon Linux 2023 |
+| Private IPv4 address | `172.31.37.166` |
+| Web server | Apache HTTP Server |
+| Web document root | `/var/www/html` |
+
+The instance was accessed using EC2 Instance Connect. Apache was installed and verified to be running.
+
+> The instance's public IPv4 address is intentionally omitted because public IPv4 addresses can change. Add the current address only if you deliberately want it in your documentation.
+
+## 8. Web Server and Website
+
+Apache serves the website from:
+
+```text
+/var/www/html
+```
+
+The website files are:
+
+```text
+index.html
+style.css
+```
+
+The website is titled **My Cloud Support Lab** and contains information/cards for AWS services such as EC2, S3, IAM, and VPC.
+
+The website and stylesheet were tested on the EC2 instance. HTTP responses for the site files returned `200 OK`, and the website was viewed in a browser on desktop and mobile layouts.
+
+## 9. Request Flow
+
+1. A visitor requests the website using the EC2 instance's public IPv4 address over HTTP (port 80).
+2. The VPC route table sends internet-bound traffic through the Internet Gateway.
+3. The subnet's NACL and the EC2 security group evaluate traffic according to their rules.
+4. The request reaches the EC2 instance.
+5. Apache serves `index.html` and `style.css` from `/var/www/html`.
+
+The architecture diagram is a logical overview. A NACL and a security group are security controls, not sequential network appliances or physical hops.
+
+## 10. Security Notes and Limitations
+
+- SSH (TCP 22) is restricted to the administrator's current public IP using `/32`.
+- HTTP (TCP 80) is publicly accessible to allow website visitors.
+- The subnet has public IPv4 auto-assignment enabled.
+- The subnet route table has an active default route to the Internet Gateway.
+- The NACL currently allows all inbound and outbound traffic through rule `100`; the security group provides the narrower instance-level inbound rules.
+- The website uses HTTP rather than HTTPS.
+- This is a learning project, not a production-hardened deployment.
+- Never commit private keys, passwords, access keys, secret tokens, or other credentials to GitHub.
+
+## 11. Possible Future Improvements
+
+These are not part of the current completed scope:
+
+- Configure HTTPS using a suitable certificate and domain.
+- Review and tighten NACL rules if required by the design.
+- Use an IAM role for EC2 when the instance needs to access AWS services.
+- Enable and review CloudWatch monitoring and alarms.
+- Store static website assets in Amazon S3 or explore an S3-backed architecture.
+- Add automated deployment and configuration management.
+
+## 12. Project Status
+
+The EC2 website deployment and the listed network configuration checks have been completed and verified during the lab. Documentation and GitHub publication are separate project-delivery steps. Future improvements above should not be described as completed until they have been implemented and tested.
