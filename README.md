@@ -82,7 +82,7 @@ Add your screenshots below. Update the image filenames if yours are different.
 ![EC2 Instance](Screenshot%202026-11-07%20222556.png)
 
 ### Security Group
-![Security Group](Screenshot-2026-11-07-222703.png)
+![Security Group](Screenshot%202026-11-07%20223016.png)
 
 ### Website – Desktop View
 ![Desktop Website](Screenshot%202026-11-07%20222935.png)
@@ -91,7 +91,7 @@ Add your screenshots below. Update the image filenames if yours are different.
 ![Desktop Website](Screenshot%202026-11-07%20223028.png)
 
 ### Website – Mobile View
-![Mobile Website](Screenshot_20261107-225652_Google)
+![Mobile Website](Screenshot_20261107-225652_Google.png)
 
 ## Challenges and Troubleshooting
 
