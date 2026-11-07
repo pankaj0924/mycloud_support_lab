@@ -95,41 +95,42 @@ Add your screenshots below. Update the image filenames if yours are different.
 
 ## Challenges and Troubleshooting
 
-During this project, I practised troubleshooting common cloud deployment issues:
+During the project, I encountered and worked on resolving the following issues:
 
-- Understanding EC2 connectivity.
-- Configuring SSH and HTTP inbound rules.
-- Checking VPC routing and Internet Gateway settings.
-- Verifying Apache service status.
-- Testing website accessibility.
-- Resolving website connection issues.
+- Troubleshooting EC2 instance connectivity.
+- Configuring SSH (Port 22) and HTTP (Port 80) security group rules.
+- Understanding public IP address connectivity.
+- Verifying VPC route table and Internet Gateway configuration.
+- Checking Apache HTTP Server status.
+- Testing website accessibility through the browser.
 
-## Security Practices
+## Security Configuration
 
-- Restricted SSH access to my IP address.
-- Allowed HTTP traffic for public website access.
-- Used AWS security groups to control instance-level inbound traffic.
-- Avoided sharing private keys and sensitive credentials.
+- Configured SSH access through the EC2 security group.
+- Allowed HTTP traffic on Port 80 for public website access.
+- Used AWS security groups to manage inbound traffic.
+- Avoided exposing private keys and sensitive credentials.
+
+## What I Learned
+
+Through this hands-on project, I developed practical knowledge of:
+
+- Launching and managing Amazon EC2 instances.
+- Understanding basic AWS networking.
+- Configuring security groups and inbound rules.
+- Working with Amazon Linux 2023.
+- Using Linux commands through the terminal.
+- Installing and managing Apache HTTP Server.
+- Hosting a static website on an EC2 instance.
+- Troubleshooting basic cloud connectivity issues.
 
 ## Future Improvements
 
 - Configure HTTPS using SSL/TLS.
 - Learn and integrate Amazon S3.
 - Implement IAM roles and permissions.
-- Configure Amazon CloudWatch monitoring.
+- Configure Amazon CloudWatch for monitoring.
 - Explore automated deployment.
-
-## What I Learned
-
-Through this project, I gained practical experience with:
-
-- AWS EC2 instance management.
-- Basic AWS networking.
-- Security group configuration.
-- Linux command-line operations.
-- Apache web server installation and management.
-- Static website deployment.
-- Basic cloud troubleshooting.
 
 ## Author
 
@@ -137,4 +138,4 @@ Through this project, I gained practical experience with:
 
 Aspiring Cloud Engineer
 
-This project is part of my hands-on AWS cloud learning journey.
+This project is part of my hands-on AWS cloud learning journey.oud learning journey.
