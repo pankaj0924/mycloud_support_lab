@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/79428bc3-0bac-42b8-b79a-10aaca849d21" /># My Cloud Support Lab – AWS EC2 Project
+<!-- <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/79428bc3-0bac-42b8-b79a-10aaca849d21" /># My Cloud Support Lab – AWS EC2 Project -->
 
 ## Project Overview
 
