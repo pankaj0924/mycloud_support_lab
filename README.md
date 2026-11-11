@@ -136,16 +136,18 @@ The alarm action sends a notification when the alarm transitions to the **In ala
 ![Apache Status](Screenshot%202026-11-07%20222852.png)
 
 ### Instance successfully running
-![EC2 Instance](Screenshot%202026-11-07%20222556.png)
+![EC2 Instance](Screenshot%202026-11-11%20091830.png)
 
 ### SSH and HTTP rules
-![Security Group](Screenshot%202026-11-07%20222703.png)
+![Security Group](Screenshot%202026-11-11%20092053.png)
 
 ### Website successfully hosted
-![Desktop Website](Screenshot%202026-11-07%20222935.png)
-![Desktop Website](Screenshot%202026-11-07%20223006.png)
-![Desktop Website](Screenshot%202026-11-07%20223016.png)
-![Desktop Website](Screenshot%202026-11-07%20223028.png)
+![Desktop Website](Screenshot%202026-11-11%20091152.png)
+![Desktop Website](Screenshot%202026-11-11%20091202.png)
+![Desktop Website](Screenshot%202026-11-11%20091215.png)
+![Desktop Website](Screenshot%202026-11-11%20091226.png)
+![Desktop Website](Screenshot%202026-11-11%20091234.png)
+![Desktop Website](Screenshot%202026-11-11%20091240.png)
 
 ### Responsive website
 ![Mobile Website](Screenshot_20261107-225652_Google.png)
