@@ -150,7 +150,7 @@ The alarm action sends a notification when the alarm transitions to the **In ala
 ![Desktop Website](Screenshot%202026-11-11%20091240.png)
 
 ### Responsive website
-![Mobile Website](Screenshot_20261107-225652_Google.png)
+![Mobile Website](Screenshot_20261111-090942_Google.png)
 
 ### CloudWatch monitoring
 Add the latest CloudWatch dashboard and alarm screenshots to the repository after collecting the final evidence. Suggested filenames:
