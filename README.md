@@ -8,7 +8,7 @@ In this project, I launched an Amazon EC2 instance, configured VPC networking an
 
 ## Project Architecture
 
-![AWS Cloud Support Lab Architecture](architecture.png)
+![AWS Cloud Support Lab Architecture](project_architecture.png)
 
 The diagram shows the EC2 web-hosting environment and its integrations with Amazon S3 and Amazon CloudWatch. The S3 bucket is in `ap-south-1`, while the EC2 instance and CloudWatch resources are in `eu-north-1`.
 
