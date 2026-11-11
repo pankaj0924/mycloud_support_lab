@@ -1,4 +1,6 @@
-My Cloud Support Lab – AWS EC2 Project 
+# My Cloud Support Lab
+
+## Project Overview
 
 ## Project Overview
 
