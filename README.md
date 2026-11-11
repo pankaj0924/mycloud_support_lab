@@ -2,8 +2,6 @@
 
 ## Project Overview
 
-## Project Overview
-
 My Cloud Support Lab is a hands-on AWS project focused on learning and practising cloud infrastructure, EC2 instance management, networking, web server deployment, storage integration, and infrastructure monitoring.
 
 In this project, I launched an Amazon EC2 instance, configured VPC networking and security settings, installed Apache HTTP Server, and deployed a responsive static website. I extended the lab by integrating Amazon S3 through an EC2 IAM role and configuring Amazon CloudWatch monitoring, a high-CPU alarm, and an Amazon SNS email notification action. The project provided practical experience with AWS infrastructure, Linux administration, access control, storage operations, monitoring, and troubleshooting.
